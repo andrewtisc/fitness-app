@@ -9,20 +9,20 @@
 /* Begin PBXBuildFile section */
 		9D91513C2B77424600F172CE /* Fitness_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91513B2B77424600F172CE /* Fitness_AppApp.swift */; };
 		9D91513E2B77424600F172CE /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D91513D2B77424600F172CE /* Persistence.swift */; };
-		9D9151412B77424600F172CE /* Fitness_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D91513F2B77424600F172CE /* Fitness_App.xcdatamodeld */; };
+		9D9151412B77424600F172CE /* Fitness_App_FrontEnd.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D91513F2B77424600F172CE /* Fitness_App_FrontEnd.xcdatamodeld */; };
 		9D9151432B77424600F172CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9151422B77424600F172CE /* ContentView.swift */; };
 		9D9151452B77424700F172CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D9151442B77424700F172CE /* Assets.xcassets */; };
 		9D9151492B77424700F172CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D9151482B77424700F172CE /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9D9151382B77424600F172CE /* Fitness-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D9151382B77424600F172CE /* Fitness-App-FrontEnd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness-App-FrontEnd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D91513B2B77424600F172CE /* Fitness_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_AppApp.swift; sourceTree = "<group>"; };
 		9D91513D2B77424600F172CE /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		9D9151402B77424600F172CE /* Fitness_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fitness_App.xcdatamodel; sourceTree = "<group>"; };
 		9D9151422B77424600F172CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D9151442B77424700F172CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9D9151462B77424700F172CE /* Fitness_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fitness_App.entitlements; sourceTree = "<group>"; };
+		9D9151462B77424700F172CE /* Fitness_App_FrontEnd.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fitness_App_FrontEnd.entitlements; sourceTree = "<group>"; };
 		9D9151482B77424700F172CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,7 +40,7 @@
 		9D91512F2B77424600F172CE = {
 			isa = PBXGroup;
 			children = (
-				9D91513A2B77424600F172CE /* Fitness-App */,
+				9D91513A2B77424600F172CE /* Fitness-App-FrontEnd */,
 				9D9151392B77424600F172CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,23 +48,23 @@
 		9D9151392B77424600F172CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D9151382B77424600F172CE /* Fitness-App.app */,
+				9D9151382B77424600F172CE /* Fitness-App-FrontEnd.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9D91513A2B77424600F172CE /* Fitness-App */ = {
+		9D91513A2B77424600F172CE /* Fitness-App-FrontEnd */ = {
 			isa = PBXGroup;
 			children = (
 				9D91513B2B77424600F172CE /* Fitness_AppApp.swift */,
 				9D91513D2B77424600F172CE /* Persistence.swift */,
 				9D9151422B77424600F172CE /* ContentView.swift */,
 				9D9151442B77424700F172CE /* Assets.xcassets */,
-				9D9151462B77424700F172CE /* Fitness_App.entitlements */,
-				9D91513F2B77424600F172CE /* Fitness_App.xcdatamodeld */,
+				9D9151462B77424700F172CE /* Fitness_App_FrontEnd.entitlements */,
+				9D91513F2B77424600F172CE /* Fitness_App_FrontEnd.xcdatamodeld */,
 				9D9151472B77424700F172CE /* Preview Content */,
 			);
-			path = "Fitness-App";
+			path = "Fitness-App-FrontEnd";
 			sourceTree = "<group>";
 		};
 		9D9151472B77424700F172CE /* Preview Content */ = {
@@ -78,9 +78,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9D9151372B77424600F172CE /* Fitness-App */ = {
+		9D9151372B77424600F172CE /* Fitness-App-FrontEnd */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D91514C2B77424700F172CE /* Build configuration list for PBXNativeTarget "Fitness-App" */;
+			buildConfigurationList = 9D91514C2B77424700F172CE /* Build configuration list for PBXNativeTarget "Fitness-App-FrontEnd" */;
 			buildPhases = (
 				9D9151342B77424600F172CE /* Sources */,
 				9D9151352B77424600F172CE /* Frameworks */,
@@ -90,9 +90,9 @@
 			);
 			dependencies = (
 			);
-			name = "Fitness-App";
+			name = "Fitness-App-FrontEnd";
 			productName = "Fitness-App";
-			productReference = 9D9151382B77424600F172CE /* Fitness-App.app */;
+			productReference = 9D9151382B77424600F172CE /* Fitness-App-FrontEnd.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9D9151332B77424600F172CE /* Build configuration list for PBXProject "Fitness-App" */;
+			buildConfigurationList = 9D9151332B77424600F172CE /* Build configuration list for PBXProject "Fitness-App-FrontEnd" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,7 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9D9151372B77424600F172CE /* Fitness-App */,
+				9D9151372B77424600F172CE /* Fitness-App-FrontEnd */,
 			);
 		};
 /* End PBXProject section */
@@ -146,7 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D91513C2B77424600F172CE /* Fitness_AppApp.swift in Sources */,
-				9D9151412B77424600F172CE /* Fitness_App.xcdatamodeld in Sources */,
+				9D9151412B77424600F172CE /* Fitness_App_FrontEnd.xcdatamodeld in Sources */,
 				9D9151432B77424600F172CE /* ContentView.swift in Sources */,
 				9D91513E2B77424600F172CE /* Persistence.swift in Sources */,
 			);
@@ -344,7 +344,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9D9151332B77424600F172CE /* Build configuration list for PBXProject "Fitness-App" */ = {
+		9D9151332B77424600F172CE /* Build configuration list for PBXProject "Fitness-App-FrontEnd" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D91514A2B77424700F172CE /* Debug */,
@@ -353,7 +353,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D91514C2B77424700F172CE /* Build configuration list for PBXNativeTarget "Fitness-App" */ = {
+		9D91514C2B77424700F172CE /* Build configuration list for PBXNativeTarget "Fitness-App-FrontEnd" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D91514D2B77424700F172CE /* Debug */,
@@ -365,13 +365,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		9D91513F2B77424600F172CE /* Fitness_App.xcdatamodeld */ = {
+		9D91513F2B77424600F172CE /* Fitness_App_FrontEnd.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				9D9151402B77424600F172CE /* Fitness_App.xcdatamodel */,
 			);
 			currentVersion = 9D9151402B77424600F172CE /* Fitness_App.xcdatamodel */;
-			path = Fitness_App.xcdatamodeld;
+			path = Fitness_App_FrontEnd.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
