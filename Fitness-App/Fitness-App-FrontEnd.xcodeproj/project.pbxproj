@@ -13,6 +13,8 @@
 		9D9151432B77424600F172CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9151422B77424600F172CE /* ContentView.swift */; };
 		9D9151452B77424700F172CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D9151442B77424700F172CE /* Assets.xcassets */; };
 		9D9151492B77424700F172CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D9151482B77424700F172CE /* Preview Assets.xcassets */; };
+		9DE5FB4C2B784EB900D7D3F3 /* MyWorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE5FB4B2B784EB900D7D3F3 /* MyWorkoutsView.swift */; };
+		9DE5FB4E2B78525E00D7D3F3 /* WorkoutSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE5FB4D2B78525E00D7D3F3 /* WorkoutSummaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9D9151442B77424700F172CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D9151462B77424700F172CE /* Fitness_App_FrontEnd.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fitness_App_FrontEnd.entitlements; sourceTree = "<group>"; };
 		9D9151482B77424700F172CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DE5FB4B2B784EB900D7D3F3 /* MyWorkoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorkoutsView.swift; sourceTree = "<group>"; };
+		9DE5FB4D2B78525E00D7D3F3 /* WorkoutSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSummaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				9D9151462B77424700F172CE /* Fitness_App_FrontEnd.entitlements */,
 				9D91513F2B77424600F172CE /* Fitness_App_FrontEnd.xcdatamodeld */,
 				9D9151472B77424700F172CE /* Preview Content */,
+				9DE5FB4B2B784EB900D7D3F3 /* MyWorkoutsView.swift */,
+				9DE5FB4D2B78525E00D7D3F3 /* WorkoutSummaryView.swift */,
 			);
 			path = "Fitness-App-FrontEnd";
 			sourceTree = "<group>";
@@ -146,9 +152,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D91513C2B77424600F172CE /* Fitness_AppApp.swift in Sources */,
+				9DE5FB4C2B784EB900D7D3F3 /* MyWorkoutsView.swift in Sources */,
 				9D9151412B77424600F172CE /* Fitness_App_FrontEnd.xcdatamodeld in Sources */,
 				9D9151432B77424600F172CE /* ContentView.swift in Sources */,
 				9D91513E2B77424600F172CE /* Persistence.swift in Sources */,
+				9DE5FB4E2B78525E00D7D3F3 /* WorkoutSummaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
