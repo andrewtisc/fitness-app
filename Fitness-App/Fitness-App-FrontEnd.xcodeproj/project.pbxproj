@@ -15,6 +15,9 @@
 		9D9151492B77424700F172CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D9151482B77424700F172CE /* Preview Assets.xcassets */; };
 		9DE5FB4C2B784EB900D7D3F3 /* MyWorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE5FB4B2B784EB900D7D3F3 /* MyWorkoutsView.swift */; };
 		9DE5FB4E2B78525E00D7D3F3 /* WorkoutSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE5FB4D2B78525E00D7D3F3 /* WorkoutSummaryView.swift */; };
+		9DE5FB502B7885AC00D7D3F3 /* DataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE5FB4F2B7885AC00D7D3F3 /* DataTypes.swift */; };
+		9DE5FB522B789A9300D7D3F3 /* ReadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE5FB512B789A9300D7D3F3 /* ReadJSON.swift */; };
+		9DE5FB542B789CB100D7D3F3 /* workout_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DE5FB532B789CB100D7D3F3 /* workout_1.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		9D9151482B77424700F172CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DE5FB4B2B784EB900D7D3F3 /* MyWorkoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorkoutsView.swift; sourceTree = "<group>"; };
 		9DE5FB4D2B78525E00D7D3F3 /* WorkoutSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSummaryView.swift; sourceTree = "<group>"; };
+		9DE5FB4F2B7885AC00D7D3F3 /* DataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTypes.swift; sourceTree = "<group>"; };
+		9DE5FB512B789A9300D7D3F3 /* ReadJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadJSON.swift; sourceTree = "<group>"; };
+		9DE5FB532B789CB100D7D3F3 /* workout_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = workout_1.json; path = ../../../../../Downloads/workout_1.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 		9D91513A2B77424600F172CE /* Fitness-App-FrontEnd */ = {
 			isa = PBXGroup;
 			children = (
+				9DE5FB532B789CB100D7D3F3 /* workout_1.json */,
 				9D91513B2B77424600F172CE /* Fitness_AppApp.swift */,
 				9D91513D2B77424600F172CE /* Persistence.swift */,
 				9D9151422B77424600F172CE /* ContentView.swift */,
@@ -69,6 +76,8 @@
 				9D9151472B77424700F172CE /* Preview Content */,
 				9DE5FB4B2B784EB900D7D3F3 /* MyWorkoutsView.swift */,
 				9DE5FB4D2B78525E00D7D3F3 /* WorkoutSummaryView.swift */,
+				9DE5FB4F2B7885AC00D7D3F3 /* DataTypes.swift */,
+				9DE5FB512B789A9300D7D3F3 /* ReadJSON.swift */,
 			);
 			path = "Fitness-App-FrontEnd";
 			sourceTree = "<group>";
@@ -141,6 +150,7 @@
 			files = (
 				9D9151492B77424700F172CE /* Preview Assets.xcassets in Resources */,
 				9D9151452B77424700F172CE /* Assets.xcassets in Resources */,
+				9DE5FB542B789CB100D7D3F3 /* workout_1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,10 +163,12 @@
 			files = (
 				9D91513C2B77424600F172CE /* Fitness_AppApp.swift in Sources */,
 				9DE5FB4C2B784EB900D7D3F3 /* MyWorkoutsView.swift in Sources */,
+				9DE5FB502B7885AC00D7D3F3 /* DataTypes.swift in Sources */,
 				9D9151412B77424600F172CE /* Fitness_App_FrontEnd.xcdatamodeld in Sources */,
 				9D9151432B77424600F172CE /* ContentView.swift in Sources */,
 				9D91513E2B77424600F172CE /* Persistence.swift in Sources */,
 				9DE5FB4E2B78525E00D7D3F3 /* WorkoutSummaryView.swift in Sources */,
+				9DE5FB522B789A9300D7D3F3 /* ReadJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
