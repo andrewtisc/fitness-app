@@ -1,11 +1,17 @@
-//
-//  ReadJSON.swift
-//  Fitness-App-FrontEnd
-//
-//  Created by Andrew Tischhauser on 2/11/24.
-//
-
 import Foundation
+struct Workout: Codable {
+    var workoutID: Int
+    var workoutName: String
+    var exercises: [Exercise]
+}
+
+struct Exercise: Codable {
+    var exerciseID: Int
+    var exerciseName: String
+    var sets: Int
+    var reps: Int
+    var weight: Int
+}
 
 func readLocalJSON(fileName name: String) -> Data? {
     // Takes a fileName (without the json extension) and attempts to return the local JSON as Data
@@ -24,9 +30,11 @@ func readLocalJSON(fileName name: String) -> Data? {
     return nil
 }
 
-func getLocalWorkout(workoutID id: Int) -> Workout? {
-    let data = readLocalJSON(fileName: "workout_\(id)")
-    let workout = try? JSONDecoder().decode(Workout.self, from: data!)
-    return workout
-}
+var mydata = readLocalJSON(fileName: "workout_1")
+var mydict = try JSONSerialization.jsonObject(with: mydata!, options: []) as? [String: Any]
+let myworkout = try JSONDecoder().decode(Workout.self, from: mydata!)
+
+print(myworkout.exercises[1].exerciseName)
+
+
 
