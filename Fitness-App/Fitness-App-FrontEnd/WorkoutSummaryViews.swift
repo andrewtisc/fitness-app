@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct WorkoutSummaryView: View {
-    @State private var workout = getLocalWorkout(workoutID: 2)!
+    var workout: Workout
+    //@State private var workout = getLocalWorkout(workoutID: 2)!
     
     var body: some View {
         VStack {
@@ -56,5 +57,5 @@ struct WorkoutSummaryExerciseView: View {
 }
 
 #Preview {
-    WorkoutSummaryView()
+    WorkoutSummaryView(workout: getLocalWorkout(workoutID: 2)!)
 }

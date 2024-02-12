@@ -15,14 +15,8 @@ struct MyWorkoutsView: View {
                 Text("My Workouts")
                 
                 // Run through a list of workouts and make a button per workout (takes you to "Workout Summary" view
-                ForEach(0..<5) { number in
-                    /*NavigationLink{
-                        WorkoutSummaryView()
-                    } label: {
-                        Button("Workout Name \(number)"){}
-                            .buttonStyle(.borderedProminent)
-                    }*/
-                    NavigationLink("Workout \(number)", destination: WorkoutSummaryView())
+                ForEach(1..<5) { number in
+                    NavigationLink("Workout \(number)", destination: WorkoutSummaryView(workout: getLocalWorkout(workoutID: number)!))
                         .buttonStyle(.borderedProminent)
                 }
             }
