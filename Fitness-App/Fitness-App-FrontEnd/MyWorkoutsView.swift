@@ -8,15 +8,23 @@
 import SwiftUI
 
 struct MyWorkoutsView: View {
+    var workouts: [Workout]
+    
     var body: some View {
         NavigationStack {
             VStack {
                 // Header for "My Workouts" menu
                 Text("My Workouts")
-                
+                Divider()
                 // Run through a list of workouts and make a button per workout (takes you to "Workout Summary" view
+                /*
                 ForEach(1..<5) { number in
                     NavigationLink("Workout \(number)", destination: WorkoutSummaryView(workout: getLocalWorkout(workoutID: number)!))
+                        .buttonStyle(.borderedProminent)
+                }
+                 */
+                ForEach(workouts, id:\.self) { wo in
+                    NavigationLink("Workout \(wo.workoutID): \(wo.workoutName)", destination: WorkoutSummaryView(workout: wo))
                         .buttonStyle(.borderedProminent)
                 }
             }
@@ -25,5 +33,8 @@ struct MyWorkoutsView: View {
 }
 
 #Preview {
-    MyWorkoutsView()
+    MyWorkoutsView(workouts: [getLocalWorkout(workoutID: 1)!,
+                              getLocalWorkout(workoutID: 2)!,
+                              getLocalWorkout(workoutID: 3)!,
+                              getLocalWorkout(workoutID: 4)!])
 }
