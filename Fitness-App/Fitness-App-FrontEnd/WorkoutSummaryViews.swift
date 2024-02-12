@@ -18,8 +18,9 @@ struct WorkoutSummaryView: View {
             Text("Body parts placeholder")
             Text("Time placeholder")
             Divider()
-            WorkoutSummaryExerciseView(exercise: workout.exercises[0])
-            // ForEach(workout)
+            ForEach(workout.exercises, id: \.self) { ex in
+                WorkoutSummaryExerciseView(exercise: ex)
+            }
         }
     }
 }

@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct Workout: Codable {
+struct Workout: Codable, Hashable {
     var workoutID: Int
     var workoutName: String
     var exercises: [Exercise]
 }
 
-struct Exercise: Codable {
+struct Exercise: Codable, Hashable {
     var exerciseID: Int
     var exerciseName: String
     var sets: Int
