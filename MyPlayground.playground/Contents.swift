@@ -31,10 +31,10 @@ func readLocalJSON(fileName name: String) -> Data? {
 }
 
 var mydata = readLocalJSON(fileName: "workout_1")
-var mydict = try JSONSerialization.jsonObject(with: mydata!, options: []) as? [String: Any]
+// var mydict = try JSONSerialization.jsonObject(with: mydata!, options: []) as? [String: Any]
 let myworkout = try JSONDecoder().decode(Workout.self, from: mydata!)
 
-print(myworkout.exercises[1].exerciseName)
+print(myworkout.exercises[1])
 
 
 
