@@ -1,6 +1,6 @@
 # fitness-app
 
 ## Description
-This is an iOS fitness app for customized workouts!
+This is an iOS fitness app for customized workouts.
 
-### Just testing switching between git branches
+Currenty in the process of building out a functional UI skeleton. Next step is building the python backend, then making the UI pretty. Then testing and publishing.
