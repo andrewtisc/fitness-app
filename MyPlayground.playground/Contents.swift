@@ -8,7 +8,10 @@ struct Workout: Codable {
 struct Exercise: Codable {
     var exerciseID: Int
     var exerciseName: String
-    var sets: Int
+    var sets: [Set]
+}
+
+struct Set: Codable, Hashable, Identifiable {
     var reps: Int
     var weight: Int
 }

@@ -12,15 +12,24 @@ struct WorkoutSummaryView: View {
     //@State private var workout = getLocalWorkout(workoutID: 2)!
     
     var body: some View {
-        VStack {
-            Divider()
-            Text(workout.workoutName)
-                .bold()
-            Text("Body parts placeholder")
-            Text("Time placeholder")
-            Divider()
-            ForEach(workout.exercises, id: \.self) { ex in
-                WorkoutSummaryExerciseView(exercise: ex)
+        NavigationStack {
+            VStack {
+                Divider()
+                HStack {
+                    VStack {
+                        Text(workout.workoutName)
+                            .bold()
+                        Text("Body parts placeholder")
+                        Text("Time placeholder")
+                    }
+                    .padding()
+                    NavigationLink("Start Workout", destination: CurrentExerciseView(workout: workout))
+                        .buttonStyle(.borderedProminent)
+                }
+                Divider()
+                ForEach(workout.exercises, id: \.self) { ex in
+                    WorkoutSummaryExerciseView(exercise: ex)
+                }
             }
         }
     }

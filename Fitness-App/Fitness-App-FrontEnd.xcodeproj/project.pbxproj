@@ -21,6 +21,7 @@
 		9DE5FB622B92E94A00D7D3F3 /* workout_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DE5FB5E2B92E94A00D7D3F3 /* workout_4.json */; };
 		9DE5FB632B92E94A00D7D3F3 /* workout_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DE5FB5F2B92E94A00D7D3F3 /* workout_3.json */; };
 		9DE5FB642B92E94A00D7D3F3 /* workout_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DE5FB602B92E94A00D7D3F3 /* workout_1.json */; };
+		9DE5FB662B92EA8300D7D3F3 /* CurrentExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE5FB652B92EA8300D7D3F3 /* CurrentExerciseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		9DE5FB5E2B92E94A00D7D3F3 /* workout_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = workout_4.json; sourceTree = "<group>"; };
 		9DE5FB5F2B92E94A00D7D3F3 /* workout_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = workout_3.json; sourceTree = "<group>"; };
 		9DE5FB602B92E94A00D7D3F3 /* workout_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = workout_1.json; sourceTree = "<group>"; };
+		9DE5FB652B92EA8300D7D3F3 /* CurrentExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentExerciseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				9D9151422B77424600F172CE /* ContentView.swift */,
 				9DE5FB4B2B784EB900D7D3F3 /* MyWorkoutsView.swift */,
 				9DE5FB4D2B78525E00D7D3F3 /* WorkoutSummaryViews.swift */,
+				9DE5FB652B92EA8300D7D3F3 /* CurrentExerciseView.swift */,
 				9DE5FB512B789A9300D7D3F3 /* ReadJSON.swift */,
 				9DE5FB4F2B7885AC00D7D3F3 /* DataTypes.swift */,
 				9D9151442B77424700F172CE /* Assets.xcassets */,
@@ -178,6 +181,7 @@
 				9DE5FB502B7885AC00D7D3F3 /* DataTypes.swift in Sources */,
 				9D9151412B77424600F172CE /* Fitness_App_FrontEnd.xcdatamodeld in Sources */,
 				9D9151432B77424600F172CE /* ContentView.swift in Sources */,
+				9DE5FB662B92EA8300D7D3F3 /* CurrentExerciseView.swift in Sources */,
 				9D91513E2B77424600F172CE /* Persistence.swift in Sources */,
 				9DE5FB4E2B78525E00D7D3F3 /* WorkoutSummaryViews.swift in Sources */,
 				9DE5FB522B789A9300D7D3F3 /* ReadJSON.swift in Sources */,
