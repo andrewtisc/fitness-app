@@ -16,7 +16,14 @@ struct Workout: Codable, Hashable {
 struct Exercise: Codable, Hashable {
     var exerciseID: Int
     var exerciseName: String
-    var sets: Int
+    var sets: [Set]
+    //var reps: Int
+    //var weight: Int
+}
+
+struct Set: Codable, Hashable, Identifiable {
+    //Note: Set is a keyword, consider renaming this and refactoring
+    let id: Int
     var reps: Int
     var weight: Int
 }

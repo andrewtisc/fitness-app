@@ -75,18 +75,18 @@
 				9D91513B2B77424600F172CE /* Fitness_AppApp.swift */,
 				9D91513D2B77424600F172CE /* Persistence.swift */,
 				9D9151422B77424600F172CE /* ContentView.swift */,
+				9DE5FB4B2B784EB900D7D3F3 /* MyWorkoutsView.swift */,
+				9DE5FB4D2B78525E00D7D3F3 /* WorkoutSummaryViews.swift */,
+				9DE5FB512B789A9300D7D3F3 /* ReadJSON.swift */,
+				9DE5FB4F2B7885AC00D7D3F3 /* DataTypes.swift */,
 				9D9151442B77424700F172CE /* Assets.xcassets */,
 				9D9151462B77424700F172CE /* Fitness_App_FrontEnd.entitlements */,
 				9D91513F2B77424600F172CE /* Fitness_App_FrontEnd.xcdatamodeld */,
 				9D9151472B77424700F172CE /* Preview Content */,
-				9DE5FB4B2B784EB900D7D3F3 /* MyWorkoutsView.swift */,
-				9DE5FB4D2B78525E00D7D3F3 /* WorkoutSummaryViews.swift */,
 				9DE5FB572B79C17900D7D3F3 /* workout_1.json */,
 				9DE5FB532B789CB100D7D3F3 /* workout_2.json */,
 				9DE5FB592B79C4C400D7D3F3 /* workout_3.json */,
 				9DE5FB5A2B79C4C400D7D3F3 /* workout_4.json */,
-				9DE5FB4F2B7885AC00D7D3F3 /* DataTypes.swift */,
-				9DE5FB512B789A9300D7D3F3 /* ReadJSON.swift */,
 			);
 			path = "Fitness-App-FrontEnd";
 			sourceTree = "<group>";
