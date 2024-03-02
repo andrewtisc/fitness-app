@@ -43,11 +43,11 @@ struct WorkoutSummaryExerciseView: View {
                     Spacer()
                 }
                 HStack {
-                    Text("\(exercise.sets) sets * \(exercise.reps) reps")
+                    //Text("\(exercise.sets) sets * \(exercise.reps) reps")
                     Spacer()
                 }
                 HStack {
-                    Text("\(exercise.weight) lbs")
+                    //Text("\(exercise.weight) lbs")
                     Spacer()
                 }
             }
@@ -57,5 +57,9 @@ struct WorkoutSummaryExerciseView: View {
 }
 
 #Preview {
-    WorkoutSummaryView(workout: getLocalWorkout(workoutID: 2)!)
+    if let wo = getLocalWorkout(workoutID: 1) {
+        WorkoutSummaryView(workout: wo)
+    } else {
+        Text("Failed to unwrap workout in WorkoutSummaryView preview.")
+    }
 }
