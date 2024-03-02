@@ -17,10 +17,10 @@
 		9DE5FB4E2B78525E00D7D3F3 /* WorkoutSummaryViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE5FB4D2B78525E00D7D3F3 /* WorkoutSummaryViews.swift */; };
 		9DE5FB502B7885AC00D7D3F3 /* DataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE5FB4F2B7885AC00D7D3F3 /* DataTypes.swift */; };
 		9DE5FB522B789A9300D7D3F3 /* ReadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE5FB512B789A9300D7D3F3 /* ReadJSON.swift */; };
-		9DE5FB542B789CB100D7D3F3 /* workout_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DE5FB532B789CB100D7D3F3 /* workout_2.json */; };
-		9DE5FB582B79C17900D7D3F3 /* workout_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DE5FB572B79C17900D7D3F3 /* workout_1.json */; };
-		9DE5FB5B2B79C4C400D7D3F3 /* workout_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DE5FB592B79C4C400D7D3F3 /* workout_3.json */; };
-		9DE5FB5C2B79C4C400D7D3F3 /* workout_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DE5FB5A2B79C4C400D7D3F3 /* workout_4.json */; };
+		9DE5FB612B92E94A00D7D3F3 /* workout_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DE5FB5D2B92E94A00D7D3F3 /* workout_2.json */; };
+		9DE5FB622B92E94A00D7D3F3 /* workout_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DE5FB5E2B92E94A00D7D3F3 /* workout_4.json */; };
+		9DE5FB632B92E94A00D7D3F3 /* workout_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DE5FB5F2B92E94A00D7D3F3 /* workout_3.json */; };
+		9DE5FB642B92E94A00D7D3F3 /* workout_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DE5FB602B92E94A00D7D3F3 /* workout_1.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,10 +36,10 @@
 		9DE5FB4D2B78525E00D7D3F3 /* WorkoutSummaryViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSummaryViews.swift; sourceTree = "<group>"; };
 		9DE5FB4F2B7885AC00D7D3F3 /* DataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTypes.swift; sourceTree = "<group>"; };
 		9DE5FB512B789A9300D7D3F3 /* ReadJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadJSON.swift; sourceTree = "<group>"; };
-		9DE5FB532B789CB100D7D3F3 /* workout_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = workout_2.json; path = ../../../../../Downloads/workout_2.json; sourceTree = "<group>"; };
-		9DE5FB572B79C17900D7D3F3 /* workout_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = workout_1.json; path = ../../../../../Downloads/workout_1.json; sourceTree = "<group>"; };
-		9DE5FB592B79C4C400D7D3F3 /* workout_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = workout_3.json; path = ../../../../../Downloads/workout_3.json; sourceTree = "<group>"; };
-		9DE5FB5A2B79C4C400D7D3F3 /* workout_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = workout_4.json; path = ../../../../../Downloads/workout_4.json; sourceTree = "<group>"; };
+		9DE5FB5D2B92E94A00D7D3F3 /* workout_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = workout_2.json; sourceTree = "<group>"; };
+		9DE5FB5E2B92E94A00D7D3F3 /* workout_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = workout_4.json; sourceTree = "<group>"; };
+		9DE5FB5F2B92E94A00D7D3F3 /* workout_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = workout_3.json; sourceTree = "<group>"; };
+		9DE5FB602B92E94A00D7D3F3 /* workout_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = workout_1.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +72,10 @@
 		9D91513A2B77424600F172CE /* Fitness-App-FrontEnd */ = {
 			isa = PBXGroup;
 			children = (
+				9DE5FB602B92E94A00D7D3F3 /* workout_1.json */,
+				9DE5FB5D2B92E94A00D7D3F3 /* workout_2.json */,
+				9DE5FB5F2B92E94A00D7D3F3 /* workout_3.json */,
+				9DE5FB5E2B92E94A00D7D3F3 /* workout_4.json */,
 				9D91513B2B77424600F172CE /* Fitness_AppApp.swift */,
 				9D91513D2B77424600F172CE /* Persistence.swift */,
 				9D9151422B77424600F172CE /* ContentView.swift */,
@@ -83,10 +87,6 @@
 				9D9151462B77424700F172CE /* Fitness_App_FrontEnd.entitlements */,
 				9D91513F2B77424600F172CE /* Fitness_App_FrontEnd.xcdatamodeld */,
 				9D9151472B77424700F172CE /* Preview Content */,
-				9DE5FB572B79C17900D7D3F3 /* workout_1.json */,
-				9DE5FB532B789CB100D7D3F3 /* workout_2.json */,
-				9DE5FB592B79C4C400D7D3F3 /* workout_3.json */,
-				9DE5FB5A2B79C4C400D7D3F3 /* workout_4.json */,
 			);
 			path = "Fitness-App-FrontEnd";
 			sourceTree = "<group>";
@@ -157,12 +157,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DE5FB622B92E94A00D7D3F3 /* workout_4.json in Resources */,
+				9DE5FB632B92E94A00D7D3F3 /* workout_3.json in Resources */,
+				9DE5FB612B92E94A00D7D3F3 /* workout_2.json in Resources */,
 				9D9151492B77424700F172CE /* Preview Assets.xcassets in Resources */,
-				9DE5FB5B2B79C4C400D7D3F3 /* workout_3.json in Resources */,
-				9DE5FB5C2B79C4C400D7D3F3 /* workout_4.json in Resources */,
 				9D9151452B77424700F172CE /* Assets.xcassets in Resources */,
-				9DE5FB582B79C17900D7D3F3 /* workout_1.json in Resources */,
-				9DE5FB542B789CB100D7D3F3 /* workout_2.json in Resources */,
+				9DE5FB642B92E94A00D7D3F3 /* workout_1.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
