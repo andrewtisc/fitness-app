@@ -104,5 +104,5 @@ struct EditSetView: View {
 }
 
 #Preview {
-    CurrentExerciseView(workout: getLocalWorkout(workoutID: 1)!)
+    CurrentExerciseView(workout: getLocalWorkout(id: 1)!)
 }

@@ -20,10 +20,7 @@ struct ContentView: View {
     //
     var body: some View {
         Text("Hello")
-        MyWorkoutsView(workouts: [getLocalWorkout(workoutID: 1)!,
-                                  getLocalWorkout(workoutID: 2)!,
-                                  getLocalWorkout(workoutID: 3)!,
-                                  getLocalWorkout(workoutID: 4)!])
+        MyWorkoutsView(workouts: [getLocalWorkout(id: 1)!])
         /*
          // Template code - keeping for reference
          NavigationView {
