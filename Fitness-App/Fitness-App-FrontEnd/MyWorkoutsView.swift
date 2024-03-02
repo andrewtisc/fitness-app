@@ -28,8 +28,5 @@ struct MyWorkoutsView: View {
 }
 
 #Preview {
-    MyWorkoutsView(workouts: [getLocalWorkout(workoutID: 1)!,
-                              getLocalWorkout(workoutID: 2)!,
-                              getLocalWorkout(workoutID: 3)!,
-                              getLocalWorkout(workoutID: 4)!])
+    MyWorkoutsView(workouts: [getLocalWorkout(workoutID: 1)!])
 }
