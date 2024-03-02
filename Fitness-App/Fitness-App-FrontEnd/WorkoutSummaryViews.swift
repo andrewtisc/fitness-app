@@ -52,11 +52,12 @@ struct WorkoutSummaryExerciseView: View {
                     Spacer()
                 }
                 HStack {
-                    //Text("\(exercise.sets) sets * \(exercise.reps) reps")
+                    Text("\(exercise.sets.count) sets")
                     Spacer()
                 }
                 HStack {
-                    //Text("\(exercise.weight) lbs")
+                    //Note: This only pulls the weight from the first set, which is not meaningful
+                    Text("\(exercise.sets[0].weight) lbs")
                     Spacer()
                 }
             }
