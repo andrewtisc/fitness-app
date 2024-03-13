@@ -9,6 +9,7 @@ import Foundation
 
 struct Workout: Codable, Hashable, Identifiable {
     var id: Int
+    var date: Date?
     var workoutName: String
     var exercises: [Exercise]
 }
