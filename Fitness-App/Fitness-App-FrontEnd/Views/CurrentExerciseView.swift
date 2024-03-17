@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct CurrentExerciseView: View {
-    var workout: Workout
-    //var exercise: Exercise
+    @StateObject var workoutWrap: WorkoutWrapper
     @State private var currentExerciseNum: Int = 1
     
     var body: some View {
@@ -30,7 +29,7 @@ struct CurrentExerciseView: View {
                     .scaledToFit()
                     .padding()
                 Button(action: {
-                    if currentExerciseNum < workout.exercises.count {
+                    if currentExerciseNum < workoutWrap.workout.exercises.count {
                         currentExerciseNum += 1
                     }
                 }, label: {
@@ -39,9 +38,9 @@ struct CurrentExerciseView: View {
                         .frame(width: 50, height: 50)
                 })
             }
-            Text(workout.exercises[currentExerciseNum - 1].exerciseName)
+            Text(workoutWrap.workout.exercises[currentExerciseNum - 1].exerciseName)
                 .padding()
-            ForEach(workout.exercises[currentExerciseNum - 1].sets, id: \.self) { set in
+            ForEach(workoutWrap.workout.exercises[currentExerciseNum - 1].sets, id: \.self) { set in
                 DisplaySetView(set: set)
             }
             EditSetView()
@@ -104,5 +103,5 @@ struct EditSetView: View {
 }
 
 #Preview {
-    CurrentExerciseView(workout: getLocalWorkout(id: 1)!)
+    CurrentExerciseView(workoutWrap: WorkoutWrapper(workout: getLocalWorkout(id: 1)!))
 }
