@@ -9,13 +9,13 @@ import SwiftUI
 
 struct CurrentWorkoutView: View {
     @StateObject var workoutWrap: WorkoutWrapper
-    @State private var currentExerciseNum: Int = 1
+    @State private var currentExerciseNum: Int = 0
     
     var body: some View {
         VStack {
             HStack {
                 Button(action: {
-                    if currentExerciseNum > 1 {
+                    if currentExerciseNum > 0 {
                         currentExerciseNum -= 1
                     }
                 }, label: {
@@ -29,7 +29,7 @@ struct CurrentWorkoutView: View {
                     .scaledToFit()
                     .padding()
                 Button(action: {
-                    if currentExerciseNum < workoutWrap.workout.exercises.count {
+                    if currentExerciseNum < workoutWrap.workout.exercises.count - 1 {
                         currentExerciseNum += 1
                     }
                 }, label: {
@@ -38,9 +38,9 @@ struct CurrentWorkoutView: View {
                         .frame(width: 50, height: 50)
                 })
             }
-            Text(workoutWrap.workout.exercises[currentExerciseNum - 1].exerciseName)
+            Text(workoutWrap.workout.exercises[currentExerciseNum].exerciseName)
                 .padding()
-            ForEach(workoutWrap.workout.exercises[currentExerciseNum - 1].sets, id: \.self) { set in
+            ForEach(workoutWrap.workout.exercises[currentExerciseNum].sets, id: \.self) { set in
                 DisplaySetView(set: set)
             }
             EditSetView(workoutWrap: workoutWrap)
