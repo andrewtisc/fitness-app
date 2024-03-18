@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CurrentExerciseView: View {
+struct CurrentWorkoutView: View {
     @StateObject var workoutWrap: WorkoutWrapper
     @State private var currentExerciseNum: Int = 1
     
@@ -103,5 +103,5 @@ struct EditSetView: View {
 }
 
 #Preview {
-    CurrentExerciseView(workoutWrap: WorkoutWrapper(workout: getLocalWorkout(id: 1)!))
+    CurrentWorkoutView(workoutWrap: WorkoutWrapper(workout: getLocalWorkout(id: 1)!))
 }

@@ -23,7 +23,7 @@ struct WorkoutSummaryView: View {
                         Text("Time placeholder")
                     }
                     .padding()
-                    NavigationLink("Start Workout", destination: CurrentExerciseView(workoutWrap: WorkoutWrapper(workout: workout)))
+                    NavigationLink("Start Workout", destination: CurrentWorkoutView(workoutWrap: WorkoutWrapper(workout: workout)))
                         .buttonStyle(.borderedProminent)
                 }
                 Divider()
