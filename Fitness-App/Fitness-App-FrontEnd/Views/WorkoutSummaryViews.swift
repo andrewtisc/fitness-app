@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WorkoutSummaryView: View {
     var workout: Workout
-    //@State private var workout = getLocalWorkout(workoutID: 2)!
+    //@State private var workout = getLocalWorkout(id: 2)!
     
     var body: some View {
         NavigationStack {
@@ -23,7 +23,7 @@ struct WorkoutSummaryView: View {
                         Text("Time placeholder")
                     }
                     .padding()
-                    NavigationLink("Start Workout", destination: CurrentExerciseView(workout: workout))
+                    NavigationLink("Start Workout", destination: CurrentWorkoutView(workoutWrap: WorkoutWrapper(workout: workout)))
                         .buttonStyle(.borderedProminent)
                 }
                 Divider()
@@ -67,7 +67,7 @@ struct WorkoutSummaryExerciseView: View {
 }
 
 #Preview {
-    if let wo = getLocalWorkout(workoutID: 1) {
+    if let wo = getLocalWorkout(id: 1) {
         WorkoutSummaryView(workout: wo)
     } else {
         Text("Failed to unwrap workout in WorkoutSummaryView preview.")

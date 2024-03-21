@@ -7,16 +7,15 @@
 
 import SwiftUI
 
-struct CurrentExerciseView: View {
-    var workout: Workout
-    //var exercise: Exercise
-    @State private var currentExerciseNum: Int = 1
+struct CurrentWorkoutView: View {
+    @StateObject var workoutWrap: WorkoutWrapper
+    @State private var currentExerciseNum: Int = 0
     
     var body: some View {
         VStack {
             HStack {
                 Button(action: {
-                    if currentExerciseNum > 1 {
+                    if currentExerciseNum > 0 {
                         currentExerciseNum -= 1
                     }
                 }, label: {
@@ -30,7 +29,7 @@ struct CurrentExerciseView: View {
                     .scaledToFit()
                     .padding()
                 Button(action: {
-                    if currentExerciseNum < workout.exercises.count {
+                    if currentExerciseNum < workoutWrap.workout.exercises.count - 1 {
                         currentExerciseNum += 1
                     }
                 }, label: {
@@ -39,12 +38,12 @@ struct CurrentExerciseView: View {
                         .frame(width: 50, height: 50)
                 })
             }
-            Text(workout.exercises[currentExerciseNum - 1].exerciseName)
+            Text(workoutWrap.workout.exercises[currentExerciseNum].exerciseName)
                 .padding()
-            ForEach(workout.exercises[currentExerciseNum - 1].sets, id: \.self) { set in
+            ForEach(workoutWrap.workout.exercises[currentExerciseNum].sets, id: \.self) { set in
                 DisplaySetView(set: set)
             }
-            EditSetView()
+            EditSetView(workoutWrap: workoutWrap)
         }
     }
 }
@@ -66,6 +65,7 @@ struct EditSetView: View {
     //var exercise: Exercise
     @State private var weight: Int = 45
     @State private var reps: Int = 10
+    @ObservedObject var workoutWrap: WorkoutWrapper
     
     var body: some View {
         VStack {
@@ -75,16 +75,16 @@ struct EditSetView: View {
                     HStack {
                         Text("Weight: ")
                             .padding(.horizontal)
-                        Stepper(value: $weight, in: 0...310, step: 5) {
-                            TextField("", value: $weight, formatter: NumberFormatter())
+                        Stepper(value: $workoutWrap.workout.exercises[0].sets[0].weight, in: 0...310, step: 5) {
+                            TextField("", value: $workoutWrap.workout.exercises[0].sets[0].weight, formatter: NumberFormatter())
                                 .border(Color.black)
                         }
                     }
                     HStack {
                         Text("Reps: ")
                             .padding(.horizontal)
-                        Stepper(value: $reps, in: 0...100, step: 1) {
-                            TextField("", value: $reps, formatter: NumberFormatter())
+                        Stepper(value: $workoutWrap.workout.exercises[0].sets[0].reps, in: 0...100, step: 1) {
+                            TextField("", value: $workoutWrap.workout.exercises[0].sets[0].reps, formatter: NumberFormatter())
                                 .border(Color.black)
                         }
                     }
@@ -94,6 +94,7 @@ struct EditSetView: View {
                     //let se = Set(id: 99, reps: 999, weight: 9999)
                     //let ex = Exercise(exerciseID: 1, exerciseName: "MadeUpExercise", sets: [se])
                     //writeLocalJSON(codableStruct: ex, fileName: "testname")
+                    
                 }, label: {
                     Text("Finish Set")
                 })
@@ -104,5 +105,5 @@ struct EditSetView: View {
 }
 
 #Preview {
-    CurrentExerciseView(workout: getLocalWorkout(workoutID: 1)!)
+    CurrentWorkoutView(workoutWrap: WorkoutWrapper(workout: getLocalWorkout(id: 1)!))
 }

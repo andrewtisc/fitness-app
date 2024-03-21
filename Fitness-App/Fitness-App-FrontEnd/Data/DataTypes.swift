@@ -6,15 +6,27 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct Workout: Codable, Hashable {
-    var workoutID: Int
+struct Workout: Codable, Hashable, Identifiable {
+    var id: Int
+    var date: Date?
     var workoutName: String
     var exercises: [Exercise]
 }
 
-struct Exercise: Codable, Hashable {
-    var exerciseID: Int
+class WorkoutWrapper: ObservableObject {
+    @Published var workout: Workout
+
+    init(workout: Workout) {
+        self.workout = workout
+    }
+    
+    // Additional methods to modify the workout data can be added here
+}
+
+struct Exercise: Codable, Hashable, Identifiable {
+    var id: Int
     var exerciseName: String
     var sets: [Set]
     //var reps: Int

@@ -24,9 +24,11 @@ func readLocalJSON(fileName name: String) -> Data? {
     return nil
 }
 
-func getLocalWorkout(workoutID id: Int) -> Workout? {
+func getLocalWorkout(id: Int) -> Workout? {
     let data = readLocalJSON(fileName: "workout_\(id)")
-    let workout = try? JSONDecoder().decode(Workout.self, from: data!)
+    let decoder = JSONDecoder()
+    decoder.dateDecodingStrategy = .iso8601
+    let workout = try? decoder.decode(Workout.self, from: data!)
     return workout
 }
 
