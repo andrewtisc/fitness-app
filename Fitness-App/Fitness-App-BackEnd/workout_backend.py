@@ -1,26 +1,18 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, send_file
 
 app = Flask(__name__)
 
-# Sample data
-books = [
-    {'id': 1, 'title': 'Book 1', 'author': 'Author 1'},
-    {'id': 2, 'title': 'Book 2', 'author': 'Author 2'},
-    {'id': 3, 'title': 'Book 3', 'author': 'Author 3'}
-]
-
 # Route with parameter
-@app.route('/api/books/<int:book_id>', methods=['GET'])
-def get_book(book_id):
-    # Find the book with the given ID
-    book = next((book for book in books if book['id'] == book_id), None)
+@app.route('/api/workouts/<int:workout_id>', methods=['GET'])
+def get_workout(workout_id):
+    # Generate the path to the JSON file based on the book ID
+    json_file_path = f'/Users/andrewtischhauser/Developer/Projects/fitness-app-vscode/fitness-app/Fitness-App/Fitness-App-FrontEnd/Sample Data/workout_{workout_id}.json'
     
-    # If book not found, return 404
-    if book is None:
+    # Try to send the JSON file
+    try:
+        return send_file(json_file_path, mimetype='application/json')
+    except FileNotFoundError:
         return jsonify({'error': 'Book not found'}), 404
-    
-    # If book found, return it
-    return jsonify(book)
 
 if __name__ == '__main__':
     app.run(debug=True)
