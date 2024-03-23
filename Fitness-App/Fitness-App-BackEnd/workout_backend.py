@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, send_file
+from pyngrok import ngrok
 
 app = Flask(__name__)
 
@@ -15,4 +16,9 @@ def get_workout(workout_id):
         return jsonify({'error': 'Book not found'}), 404
 
 if __name__ == '__main__':
+    # Start ngrok tunnel
+    public_url = ngrok.connect(5000)
+    print(' * Tunnel URL:', public_url)
+
+    # Start Flask app
     app.run(debug=True)
